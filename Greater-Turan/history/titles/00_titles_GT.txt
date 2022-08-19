@@ -1,0 +1,43 @@
+e_western_turan = {
+    
+}
+
+e_eastern_turan = {
+    
+}
+
+e_greater_turan = {
+   
+}
+
+e_mughal_empire = {
+    
+}
+
+e_mamluk = {
+    
+}
+
+e_uyghur = {
+    
+}
+
+e_kangar = {
+
+}
+
+e_cuman = {
+	
+}
+
+e_china_khaganate = {
+	
+}
+
+e_al_sin = {
+	
+}
+
+e_chinese_empire = {
+	
+}

@@ -1,0 +1,49 @@
+# Karluk part of turkic group
+
+867.1.1 = {
+	discover_innovation = innovation_bannus
+	discover_innovation = innovation_mustering_grounds
+	discover_innovation = innovation_quilted_armor
+	#
+	discover_innovation = innovation_plenary_assemblies
+	
+	discover_innovation = innovation_onlu_sistem
+	#
+}
+
+950.1.1 = {
+	# Tribal Innovations
+	discover_innovation = innovation_motte
+	discover_innovation = innovation_barracks
+	discover_innovation = innovation_catapult
+	#
+	discover_innovation = innovation_development_01
+	discover_innovation = innovation_casus_belli
+                  discover_innovation = innovation_house_soldiers
+
+                  join_era = culture_era_early_medieval
+}
+
+1066.1.1 = {
+                 discover_innovation = innovation_battlements
+                 discover_innovation = innovation_horseshoes
+	discover_innovation = innovation_mangonel
+	discover_innovation = innovation_house_soldiers
+	discover_innovation = innovation_arched_saddle
+	discover_innovation = innovation_akhal_teke
+	#
+                 discover_innovation = innovation_development_02 
+                 
+ 
+}
+
+
+
+1140.1.1 = {
+	discover_innovation = innovation_light_sipahi
+	
+}
+
+1250.1.1 = {
+	discover_innovation = innovation_heavy_sipahi
+}
