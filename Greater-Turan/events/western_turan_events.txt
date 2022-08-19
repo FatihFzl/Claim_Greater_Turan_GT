@@ -1,0 +1,21 @@
+namespace = western_turan_events
+
+
+western_turan_events.0001 = {
+	type = character_event
+	title = western_turan_events.0001.t
+	desc = western_turan_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:western_khan
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_turkic_song_effect"
+	}
+
+	option = {
+		name = western_turan_events.0001.a
+	}
+}
+

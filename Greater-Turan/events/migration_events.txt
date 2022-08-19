@@ -1,0 +1,40 @@
+namespace = migration_events
+
+migration_events.0001 = {
+
+    type = character_event
+	title = migration_events.0001.t
+	desc = migration_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:moldavia_invader_independent
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = migration_events.0001.a
+	}
+}
+
+
+migration_events.0002 = {
+
+    type = character_event
+	title = migration_events.0002.t
+	desc = migration_events.0002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:wallachia_invader_independent
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = migration_events.0002.a
+	}
+}

@@ -1,0 +1,41 @@
+﻿# Emblems used in the CoA designer.
+# The order defines the order in which they are listed.
+#
+# Format:
+# filename = {
+#     # How many colors options to show for this emblem. Optional, will assume maximum number of colors if missing
+#     colors = 3
+#
+#     # Whether to show the emblem in the CoA designer. Default yes.
+#     # Add an entry with no to allow specifying number of colors for emblems used in adjusted mode
+#     visible = no
+# }
+#
+#
+# Use the count_unique_emblem_colors console command to generate this instead of manually doing the tedium
+# Note that the command does NOT preserve your visible definitions, so you'll want to add them back in yourself, use a diff tool to make it easier
+
+# Possible categories:
+# abstract
+# animals
+# circles_spirals
+# crosses_and_knots
+# faiths
+# manmade
+# nature
+# patterns
+# tribal_seal
+# writing
+# figures
+
+# Double underscore intentional to make it the first option in the list
+
+
+tib_seljuk_eagle.dds = { colors = 1 category = animals }
+tib_kara_khanid.dds = { colors = 1 category = manmade }
+tib_gokturk.dds = { colors = 1 category = animals }
+gt_asia_hun.dds = {colors = 1 category = animals}
+gt_europe_hun.dds = {colors = 1 category = animals}
+gt_uyghur_1.dds = {colors = 2 category = manmade}
+gt_uyghur_2.dds = {colors = 2 category = manmade}
+gt_cuman.dds = {colors = 1 category = animals}

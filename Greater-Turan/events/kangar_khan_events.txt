@@ -1,0 +1,22 @@
+namespace = kangar_khan_events
+
+#kangar Union
+
+kangar_khan_events.0001 = {
+	type = character_event
+	title = kangar_khan_events.0001.t
+	desc = kangar_khan_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:kangar_khan
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = kangar_khan_events.0001.a
+	}
+
+}

@@ -1,0 +1,22 @@
+namespace = uyghur_khan_events
+
+#Uyghur Khaganate
+
+uyghur_khan_events.0001 = {
+	type = character_event
+	title = uyghur_khan_events.0001.t
+	desc = uyghur_khan_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:uyghur_khan
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = uyghur_khan_events.0001.a
+	}
+
+}

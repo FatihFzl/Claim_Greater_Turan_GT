@@ -1,0 +1,23 @@
+namespace = anatolian_turks_events
+
+
+
+anatolian_turks_events.0001 = {
+	type = character_event
+	title = anatolian_turks_events.0001.t
+	desc = anatolian_turks_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:anatolian_turk
+		animation = admiration
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		anatolian_turks_effects = yes
+	}
+
+	option = {
+		name = anatolian_turks_events.0001.a
+	}
+}

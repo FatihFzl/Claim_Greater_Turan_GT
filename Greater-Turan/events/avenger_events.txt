@@ -1,0 +1,20 @@
+namespace = avenger_events
+
+
+avenger_events.0001 = {
+	type = character_event
+	title = avenger_events.0001.t
+	desc = avenger_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:avenger
+		animation = war_over_win
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = avenger_events.0001.a
+	}
+}

@@ -1,0 +1,25 @@
+namespace = mughal_empire_events
+
+#Mughal Empire
+
+mughal_empire_events.0001 = {
+	type = character_event
+	title = mughal_empire_events.0001.t
+	desc = mughal_empire_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:babur_shah
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+	}
+
+	option = {
+		name = mughal_empire_events.0001.a
+	}
+
+}
+
+
+

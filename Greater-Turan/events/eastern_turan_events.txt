@@ -1,0 +1,21 @@
+namespace = eastern_turan_events
+
+
+
+eastern_turan_events.0001 = {
+	type = character_event
+	title = eastern_turan_events.0001.t
+	desc = eastern_turan_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:eastern_khan
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = eastern_turan_events.0001.a
+	}
+}

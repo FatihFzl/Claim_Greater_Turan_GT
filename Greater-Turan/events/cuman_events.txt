@@ -1,0 +1,22 @@
+namespace = cuman_khan_events
+
+#cuman-kıpçak 
+
+cuman_khan_events.0001 = {
+	type = character_event
+	title = cuman_khan_events.0001.t
+	desc = cuman_khan_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:cuman_khan
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = cuman_khan_events.0001.a
+	}
+
+}

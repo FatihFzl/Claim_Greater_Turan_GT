@@ -1,0 +1,172 @@
+namespace = invade_china_events
+
+invade_china_events.0001 = {
+    type = character_event
+	title = invade_china_events.0001.t
+	desc = invade_china_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = war_attacker
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = invade_china_events.0001.a
+	}
+}
+
+
+invade_china_events.0002 = {
+    type = character_event
+	title = invade_china_events.0002.t
+	desc = invade_china_events.0002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = war_attacker
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = invade_china_events.0002.a
+	}
+}
+
+invade_china_events.0003 = {
+    type = character_event
+	title = invade_china_events.0003.t
+	desc = invade_china_events.0003.desc
+	theme = war
+	left_portrait = {
+		character = scope:invader
+		animation = war_attacker
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+		pillage_cities_effects = yes
+	}
+
+	option = {
+		name = invade_china_events.0003.a
+	}
+}
+
+invade_china_events.0004 = {
+    type = character_event
+	title = invade_china_events.0004.t
+	desc = invade_china_events.0004.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = personality_vengeful
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+	}
+
+	option = {
+		name = invade_china_events.0004.a
+	}
+}	
+
+invade_china_events.0005 = {
+    type = character_event
+	title = invade_china_events.0005.t
+	desc = invade_china_events.0005.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+	}
+
+	option = {
+		name = invade_china_events.0005.a
+	}
+}	
+
+invade_china_events.0006 = {
+    type = character_event
+	title = invade_china_events.0006.t
+	desc = invade_china_events.0006.desc
+	theme = war
+	left_portrait = {
+		character = scope:invader
+		animation = personality_vengeful
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		pillage_buddist_effects = yes
+	}
+
+	option = {
+		name = invade_china_events.0006.a
+	}
+}	
+
+
+invade_china_events.0007 = {
+    type = character_event
+	title = invade_china_events.0007.t
+	desc = invade_china_events.0007.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		
+	}
+
+	option = {
+		name = invade_china_events.0007.a
+	}
+}	
+
+
+invade_china_events.0008 = {
+    type = character_event
+	title = invade_china_events.0008.t
+	desc = invade_china_events.0008.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		enforce_rice_farm_effects = yes
+	}
+
+	option = {
+		name = invade_china_events.0008.a
+	}
+}	
+
+
+invade_china_events.0009 = {
+    type = character_event
+	title = invade_china_events.0009.t
+	desc = invade_china_events.0009.desc
+	theme = realm
+	left_portrait = {
+		character = scope:invader
+		animation = admiration
+	}
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		raise_cizya_effects = yes
+	}
+
+	option = {
+		name = invade_china_events.0009.a
+	}
+}	

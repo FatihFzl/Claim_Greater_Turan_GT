@@ -1,0 +1,23 @@
+namespace = cuman_kipchak_events
+
+#Turkish Culture (Anatolian Turks)
+
+cuman_kipchak_events.0001 = {
+	type = character_event
+	title = cuman_kipchak_events.0001.t
+	desc = cuman_kipchak_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:cuman_kipchak
+		animation = admiration
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_throat_effect"
+		cuman_kipchak_effects = yes
+	}
+
+	option = {
+		name = cuman_kipchak_events.0001.a
+	}
+}
