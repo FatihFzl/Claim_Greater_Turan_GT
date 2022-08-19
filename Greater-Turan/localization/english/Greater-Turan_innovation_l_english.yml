@@ -1,0 +1,61 @@
+﻿l_english:
+  # kurultay
+ 
+ turkic_elective:0 "Turkic Elective"
+ turkic_elective_khagan_desc:0 "Khagan's Vote: 1"
+ innovation_turkic_succession:0 "Kurultay"
+ innovation_turkic_succession_desc:0 "Kurultay, is a political and military council where the Khagan and his powerful vassals debate about important issues."
+ unlock_turkic_succession:0 "Unlocks Turkic Elective Succession Law"
+ turkic_election_succession_law:0 "Turkic Elective"
+ turkic_election_electors:0 "The Khagan and Powerful Vassals"
+ turkic_election_electors_tooltip:0 "In addition to the Khagan, powerful vassals also have right to decide who will be the next khagan."
+ turkic_election_candidates:0 "Khagan's Sons"
+ turkic_election_candidates_tooltip:0 "Khagan's sons are natural candidate to be the next Khagan."
+
+
+innovation_light_sipahi:0 "Light Armored Sipahi Recruits"
+innovation_light_sipahi_desc:0 "Sipahi's are cavalry units who are responsible of the proctection of their region beside of wars.This fearcfull warriors known for terrorising battefield. "
+culture_parameter_unlock_maa_light_sipahi:0 "Can recruit [GetMaA('light_sipahi').GetName]  as [men_at_arms|E]"
+
+innovation_heavy_sipahi:0 "Heavy Armored Sipahi Recruits"
+innovation_heavy_sipahi_desc:0 "Sipahi's are cavalry units who are responsible of the proctection of their region beside of wars.This fearcfull warriors known for terrorising battefield. "
+culture_parameter_unlock_maa_heavy_sipahi:0 "Can recruit [GetMaA('heavy_sipahi').GetName]  as [men_at_arms|E]"
+
+
+innovation_devshirme:0 "Devshirme System"
+innovation_devshirme_desc:0 "Devshirme System used by Ottomans to recruit army for cheaper."
+culture_paramater_unlock_maa_janissary:0 "Can recruit [GetMaA('janissary').GetName as [men_at_arms|E]"
+
+ghw_region_anatolia:0 "Anatolia"
+ghw_region_caspian_steppe:0 "Caspian Steppe"
+
+innovation_yaya:0 "Yaya and Musellem"
+innovation_yaya_desc:0 "Yaya and Musellem's were first organized army of Ottoman's . This high functioned soldiers were working in many fields when they are not fighting in wars."
+
+innovation_humbaraci:0 "Humbaraci Quarry"
+innovation_humbaraci_desc:0 "Humbaraci Quarry is the first mortar class in the world established by Ottoman Empire."
+
+innovation_sahi_top:0 "Shahi Cannon"
+innovation_sahi_top_desc:0 "Shahi Cannon was the strongest cannon of its time designed by Sultan Mehmed II himself made by architect Saruca Sekban ,  architect Muslihiddin and Hungarian Urban.Shahi Cannon can shoot 500 kilogram ammos."
+
+
+innovation_organized_army:0 "Organized Army"
+innovation_organized_army_desc:0 "Organized Army with trained men is better than bunch of some peasants with anchor."
+
+innovation_regular_army:0 "Regular Army"
+innovation_regular_army_desc:0 "A proffessional army who trained to be roughtless."
+
+innovation_onlu_sistem:0 "Onlu System"
+innovation_onlu_sistem_desc:0 "Onlu (Decimal) System invented by Mete Khan around 209 BCE . System requiers soldiers to divided by multiples of 10 and each group get 1 commander. Biggest group were called Tumen which contains 10000 soldier."
+
+innovation_kapikulu_quarry:0 "Kapikulu Quarry"
+innovation_kapikulu_quarry_desc:0 " Kapikulu Quarry is the military Quarry of Ottoman Empire"
+
+
+innovation_akhal_teke:0 "Akhal Teke"
+innovation_akhal_teke_desc:0 "Akhal Teke's are a Turkoman spice that famous for their speed , toughness , intelligence , and distinctive bright metallic color.It is thought to be one of the oldest horse breeds in existence."
+
+ 
+ innovation_magyar_army:0 "Magyar Army"
+ innovation_magyar_army_desc:0 "Magyar Hadsereg"
+ 

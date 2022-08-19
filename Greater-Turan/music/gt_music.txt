@@ -1,0 +1,12 @@
+mx_cue_epic_throat_effect = {
+    music = "file:/music/turkic_throat_singing.ogg"
+	pause_factor = 25
+	# Cooldown
+    #years = 1
+}
+
+mx_cue_turkic_song_effect = {
+	music = "file:/music/turkic_song.ogg"
+	pause_factor = 25
+	weight = 1
+}

@@ -1,0 +1,14 @@
+﻿l_english:
+ DEFAULT_NICKNAME_DESC:0 "Friends and foes across the land know [CHARACTER.GetShortUINameNoTooltip] as '[CHARACTER.GetNicknameNoTooltip]'"
+
+
+
+
+
+
+nick_western_khan:0 "Great Khan"
+nick_eastern_khan:0 "Great Khan"
+nick_father_of_turks:0 "Father of Turks"
+nick_babur_shah:0 "Babur Shah"
+nick_avenger:0 "Avenger"
+nick_mamluk_sultan:0 "Mamluk Sultan"

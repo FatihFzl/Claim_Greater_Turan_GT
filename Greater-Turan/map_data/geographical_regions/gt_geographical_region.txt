@@ -1,0 +1,32 @@
+
+#
+ghw_region_rum = {
+	
+duchies = {
+		#Anatolia
+		   d_cilicia d_cibyrrhaeot d_anatolia d_thracesia d_optimatoi d_bucellaria d_paphlagonia d_armeniac d_sebasteia d_charsianon d_cappadocia d_chaldia
+	
+	    #Armenia
+		d_mesopotamia d_vaspurakan
+	
+	}
+	
+}
+
+
+ghw_region_ottoman = {
+	kingdoms = {
+		k_nikea
+	k_pontus
+	k_anatolia
+	k_thessalonika
+	
+	}
+
+
+	duchies = {
+		d_mesopotamia
+		d_vaspurakan
+		d_greater_armenia
+	}
+}

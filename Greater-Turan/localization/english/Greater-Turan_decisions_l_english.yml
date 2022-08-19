@@ -1,0 +1,139 @@
+﻿l_english:
+ claim_western_turan_decision:0 "Claim Western Turkic Khaganate "
+ claim_western_turan_decision_desc:0 "To unite all first unite smaller parts.Unite your fellow Turkic people like Mete Khan and rule them to glory"
+ claim_western_turan_decision_tooltip:0 "Claim Western Turkic Khaganate"
+ claim_western_turan_decision_confirm:0 "Claim Western Turkic Khaganate"
+
+ claim_eastern_turan_decision:0 "Claim Eastern Turkic Khaganate "
+ claim_eastern_turan_decision_desc:0 "To unite all first unite smaller parts.Unite your fellow Turkic people like Mete Khan and rule them to glory"
+ claim_eastern_turan_decision_tooltip:0 "Claim Eastern Turkic Khaganate"
+ claim_eastern_turan_decision_confirm:0 "Claim Eastern Turkic Khaganate"
+
+
+ claim_greater_turan_decision:0 "Claim Greater Turan "
+ claim_greater_turan_decision_desc:0 "Follow steps of Greates Khan that wild steppe's ever seen 'Mete Khan' who killed his father for the sake of his people united scatterred tribes and formed a glorious empire. Proclaim yourself as his true successor and try to honor his name."
+ claim_greater_turan_decision_tooltip:0 " Claim Greater Turan "
+ claim_greater_turan_decision_confirm:0 "Become The Heir of Great Mete Khan"
+
+GreaterTuran_anatolian_turks_decision:0 "Adopt Turkish Culture "
+GreaterTuran_anatolian_turks_decision_desc:0 "We are evolving our culture to newer one to adapt our new home Anatolia so that we can be permenant on these lands"
+GreaterTuran_anatolian_turks_decision_tooltip:0 "Adopt Turkish Culture"
+GreaterTuran_anatolian_turks_decision_confirm:0 " A new era and culture"
+
+
+invade_china_decision:0 "Invade China Decision"
+invade_china_decision_desc:0 "Chinese our oldest rivals and enemies. We cant let them grow stronger anymore so we should raid them to take their richness and make them weak."
+invade_china_decision_tooltip:0 "Invade China"
+invade_china_decision_confirm:0 "LETS RAID THOSE WEAKLINGS"
+
+form_mughal_empire_decision:0 "Form Mughal Empire "
+form_mughal_empire_decision_desc:0 "We need a new empire to reinforce our rule in India."
+form_mughal_empire_decision_tooltip:0 "Form Mughal Empire"
+form_mughal_empire_decision_confirm:0 "Form Mughal Empire"
+
+
+avenge_talkan_and_curcan_massaccre_decision:0 "Avenge Talkan and Curcan Massaccre "
+avenge_talkan_and_curcan_massaccre_decision_desc:0 "Many years ago many of our ancestors faced inhuman acts from Arabs. Some got killed some got taken as slave and raped , our homes got burned , our temples got destroyed.Now I am making them pay for what they did and avenge my ancestors.Every town will burned and every man will killed.May our ancestors rest in peace now."
+avenge_talkan_and_curcan_massaccre_decision_tooltip:0 "Avenge Talkan and Curcan Massaccre"
+avenge_talkan_and_curcan_massaccre_decision_confirm:0 "Avenge Talkan and Curcan Massaccre"
+
+form_mamluk_decision:0 "Form Mamluk Empire "
+form_mamluk_decision_desc:0 "We Mamluks are brought here from our homes as slave warriors.Thanks to our skills and intelligence with help of Allah now we are in charge."
+form_mamluk_decision_tooltip:0 "Form Mamluk Empire"
+form_mamluk_decision_confirm:0 "Form Mamluk Empire"
+
+form_uyghur_khaganate_decision:0 "Restore Uyghur Khaganate"
+form_uyghur_khaganate_decision_desc:0 "Our Uyghur ancestors rebelled against Gokturk and formed Uyghur Khaganate in the past. Now i will restore the khaganate and lead it to glory."
+form_uyghur_khaganate_decision_tooltip:0 "Restore Uyghur Khaganate"
+form_uyghur_khaganate_decision_confirm:0 "Restoration Accomplished"
+
+moldavia_migration:0 "Moldavia Migration"
+moldavia_migration_desc:0 "It is time to migrate from our home . Now I will search better lands for my people"
+moldavia_migration_tooltip:0  "Moldavia Migration"
+moldavia_migration_confirm:0 "Migration to Moldavia"
+
+moldavia_migration_independent:0 "Independent Migrant"
+moldavia_migration_independent_desc:0 "Now i found a new land for my people and settled its time to be independent"
+moldavia_migration_independent_tooltip:0 "Independent Migrant"
+moldavia_migration_independent_confirm:0 "Independent Migrant"
+
+wallachia_migration:0 "Wallachia Migration"
+wallachia_migration_desc:0  "It is time to migrate from our home . Now I will search better lands for my people"
+wallachia_migration_tooltip:0 "Wallachia Migration"
+wallachia_migration_confirm:0 "Migration to Wallachia"
+
+wallachia_migration_independent:0 "Wallachia Migration"
+wallachia_migration_independent_desc:0 "Now i found a new land for my people and settled its time to be independent"
+wallachia_migration_independent_tooltip:0 "Independent Migrant"
+wallachia_migration_independent_confirm:0 "Independent Migrant"
+
+kangar_decision:0 "Form Kangar Union"
+kangar_decision_desc:0 "We were in a fight with our siblings for a long time. Now its time to unite againts our real enemies and stop this sibling fights."
+kangar_decision_tooltip:0 "To United People"
+kangar_decision_confirm:0 "To United People"
+
+cuman_decision:0 "Cuman-Kipchak Confederation"
+cuman_decision_desc:0 "My Cuman and Kipchak brothers and sisters , Now it is time to unite under the same banner.!"
+cuman_decision_tooltip:0 "Cuman-Kipchak Confederation"
+cuman_decision_confirm:0 "Time to establish Cuman-Kipchak Confederation "
+
+
+cuman_kipchak_decision:0 "Under One Culture"
+cuman_kipchak_decision_desc:0 "For the sake of our unification we need a new name for ourselfs."
+cuman_kipchak_decision_tooltip:0 "Cuman-Kipchak culture"
+cuman_kipchak_decision_confirm:0 "Cuman-Kipchak culture is our new culture"
+
+
+invade_china2_decision:0 "Sovereignty on China"
+invade_china2_decision_desc:0 "Chinese our oldest rivals and enemies. They have been fall againts us. Now they will have to recognize our leadership. "
+invade_china2_decision_tooltip:0 "Sovereignty on China"
+invade_china2_decision_confirm:0 "Sovereignty on China"
+
+
+raise_warbands_decision:0 "Raise Warbands"
+raise_warbands_decision_desc:0 "I will hire best warriors for my army."
+raise_warbands_decision_tooltip:0 "Raise Warbands"
+raise_warbands_decision_confirm:0 "Raise Warbands"
+
+pillage_city_decision:0 "Pillage Chinese Cities"
+pillage_city_decision_desc:0 "It is time to pillage chinese cities for treasures"
+pillage_city_decision_tooltip:0 "Pillage Chinese Cities"
+pillage_city_decision_confirm:0 "Pillage Chinese Cities"
+
+humiliate_han_decision:0 "Humiliate Han Officials"
+humiliate_han_decision_desc:0 "Those Han people are too cocky.I should make sure that they know their place"
+humiliate_han_decision_tooltip:0 "Humiliate Han Officials"
+humiliate_han_decision_confirm:0 "Humiliate Han Officials"
+
+
+form_al_sin_decision:0 "Form Al-Sin"
+form_al_sin_decision_desc:0 "Kufr was leading these lands before us , now mighty Allah's rules will rule these lands."
+form_al_sin_decision_tooltip:0 "Form Al-Sin"
+form_al_sin_decision_confirm:0 "Form Al-Sin"
+
+raise_cizya_decision:0 "Raise Jizya"
+raise_cizya_decision_desc:0 "I will raise jizya. These petty kuffars will pay me more."
+raise_cizya_decision_tooltip:0 "Raise Jizya"
+raise_cizya_decision_confirm:0 "Raise Jizya"
+
+
+pillage_buddist_decision:0 "Pillage Buddhist Temples"
+pillage_buddist_decision_desc:0 "Those temples are blashphemy to Allah. Burn them !!"
+pillage_buddist_decision_tooltip:0 "Pillage Buddhist Temples"
+pillage_buddist_decision_confirm:0 "Burn them all"
+
+form_china_decision:0 "Form Chinese Empire"
+form_china_decision_desc:0 "I must unite my people to protect them againts outsiders."
+form_china_decision_tooltip:0  "Form Chinese Empire"
+form_china_decision_confirm:0  "Form Chinese Empire"
+
+imperial_army:0 "Raise Imperial Army"
+imperial_army_desc:0 "Raise Imperial Army"
+imperial_army_tooltip:0 "Raise Imperial Army"
+imperial_army_confirm:0 "Raise Imperial Army"
+
+
+enforce_rice_farming:0 "Enforce Rice Farming"
+enforce_rice_farming_desc:0 "Enforce Rice Farming"
+enforce_rice_farming_tooltip:0 "Enforce Rice Farming"
+enforce_rice_farming_confirm:0 "Enforce Rice Farming"

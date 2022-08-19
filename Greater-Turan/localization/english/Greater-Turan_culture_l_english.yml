@@ -1,0 +1,36 @@
+﻿l_english:
+ anatolian_turks:0 "Turkish"
+
+
+ 
+ 
+ #GreaterTuran_rum_events.0001.t:0 "The Born of Turkish Culture"
+ #GreaterTuran_rum_events.0001.desc:0 "Every Muslim or Turkic subject of mine have accepted to be a Turkish."
+ #GreaterTuran_rum_events.0001.a:0 "May Allah Guides us."
+
+
+
+anatolian_turks_convert_list:0 "Every Turk or Muslim subject in your realm"
+anatolian_turks_convert_county_list:0 "Every sub realm county of yours"
+
+cuman_kipchak:0 "Cuman-Kipchak"
+
+cuman_kipchak_convert_list:0 "Every Cuman or Kipchak subject in your realm"
+cuman_kipchak_convert_counties:0 "Every Cuman or Kipchak subject in the Cuman-Kipchak Confederation"
+
+cuman_kipchak_events.0001.t:0 "Under One Culture"
+cuman_kipchak_events.0001.desc:0 "We Cuman and Kipchaks embraced our little differences and united under the one name."
+cuman_kipchak_events.0001.a:0 "For My People"
+
+
+
+
+rice_farm_list:0 "Counties of your realm"
+pillage_city_list:0 "Chinese cities"
+
+raise_cizya_list:0 "Non muslim subjects of yours"
+
+buddist_list:0 "Every Buddhist subject of your realm"
+
+ 
+ 

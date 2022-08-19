@@ -1,0 +1,12 @@
+﻿l_english:
+game_concept_GreaterTuran_invasion_casus_belli:0 "Turkic Invasion Casus Belli"
+
+TURANIAN_INVASION_CB_NAME:0 "Turkic Invasion "
+GreaterTuran_INVASION_WAR:0 "Turkic Invasion"
+TURANIAN_INVASION_WAR_NAME:0 "Turkic Invasion of [TITLE.GetNameNoTier] Invasion"
+#GreaterTuran_INVASION_WAR_NAME:0 "[TITLE.GetMameNoTier] Invasion"
+#GreaterTuran_INVASION_CB_NAME:0 "Turkic Invasion of [de_jure|E] [title|E]"
+GreaterTuran_INVASION_WAR_VICTORY_DESC_ATTACKER:0 "You seize all titles within [defender.GetShortUINamePossessive] realm belonging [de_jure|E] to the target title."
+CB_FIRST_INVADER_COST:0 "Invader"
+ CB_SCRIPTED_INVASION_COST:0 "Scripted Discount"
+
