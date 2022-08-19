@@ -1,0 +1,39 @@
+
+
+@inno_humbaraci = "gfx/interface/icons/culture_innovations/innovation_humbaraci.dds"
+@inno_sahi = "gfx/interface/icons/culture_innovations/innovation_sahi_top.dds"
+
+
+
+innovation_humbaraci = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+    icon = @inno_humbaraci
+    
+
+    potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = humbaraci
+
+	flag = global_regional
+	flag = late_medieval_era_regional
+}
+
+innovation_sahi_top = {
+
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+    icon = @inno_sahi
+    
+
+    potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = sahi_cannon
+
+	flag = global_regional
+	flag = late_medieval_era_regional
+}

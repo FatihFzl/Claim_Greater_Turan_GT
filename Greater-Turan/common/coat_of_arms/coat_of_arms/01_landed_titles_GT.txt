@@ -1,0 +1,158 @@
+e_greater_turan = {
+	pattern = "pattern_solid.dds"
+	color1= "blue"
+	colored_emblem = {
+		color1 = "green_light"
+		texture = "tib_gokturk.dds"
+		instance = {
+			position = { 0.5 0.4 }
+			scale = { 0.9 0.9 }
+		}
+	}
+}
+
+e_eastern_turan = {
+pattern = "pattern_solid.dds"
+	color1= "yellow"
+	colored_emblem = {
+		color1 = "yellow"
+		texture = "gt_asia_hun.dds"
+		instance = {
+			position = { 0.6 0.4 }
+			scale = { 1.1 1.1 }
+		}
+
+}
+}
+
+e_western_turan = {
+pattern = "pattern_solid.dds"
+	color1= "white"
+	colored_emblem = {
+		color1 = "yellow"
+		texture = "gt_europe_hun.dds"
+		instance = {
+			position = { 0.5 0.5 }
+			scale = { 0.9 0.9 }
+		}
+}
+}
+
+e_mughal_empire = {
+	pattern = "pattern_diagonal_split_02.dds"
+	color1 = "white"
+	color2 = "green"
+	colored_emblem = {
+	color1 = "yellow"
+	color2 = "yellow"
+	color3 = "yellow"
+	texture = "ce_lion_passant.dds"
+	#texture2 = "ce_star_16.dds" 
+	instance = {
+		position = {0.45 0.5}
+		scale = {0.7 0.7 }
+	}
+	}
+	colored_emblem = {
+		color1 = "yellow"
+		texture = "ce_star_16.dds"
+		instance = {
+			position = {0.5 0.4}
+			scale = {0.7 0.7}
+		}
+
+	}
+}
+
+e_mamluk ={
+	pattern="pattern_solid.dds"
+	color1=rgb { 250 180 30 }
+	color2=white
+	color3=green
+	colored_emblem={
+		color1=rgb { 250 180 30 }
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.500000 0.350000 }
+			scale={ 0.455000 0.455000 }
+		}
+}
+
+colored_emblem={
+	color1=rgb { 255 255 255 }
+	texture="ce_circle_mask.dds"
+	instance={
+		position={ 0.500000 0.450000 }
+		scale={ 0.550000 0.550000 }
+		depth=1.010000
+	}
+}
+}
+
+e_uyghur = {
+	pattern = "pattern_solid.dds"
+	color1= "white"
+	colored_emblem = {
+		color1 = "yellow"
+		color2 = "red"
+		texture = "gt_uyghur_1.dds"
+		instance = {
+			position = { 0.3 0.5 }
+			scale = { 0.6 0.65 }
+		}
+}
+
+ colored_emblem={
+	color1 = "yellow"
+	color2 = "red"
+		texture = "gt_uyghur_2.dds"
+		instance = {
+			position = { 0.65 0.55 }
+			scale = { 0.6 0.65 }
+		}
+ }
+}
+
+
+
+ 
+e_cuman = {
+	pattern = "pattern_solid.dds"
+	color1 = {57 221 230}
+	
+	
+	colored_emblem = {
+		color1 = "yellow"
+		texture = "gt_cuman.dds"
+
+		instance = {
+			position = { 0.5 0.5 }
+			scale = { 1.2 0.9 }
+		}
+	}
+}
+
+
+e_china_khaganate = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.45 } scale = { 0.9 0.9 }  }
+	}
+}
+
+e_al_sin = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_arabic_shahada.dds"
+		color1 = "black"
+		
+		instance = { position = { 0.5 0.5 } scale = { 1 1 }  }
+	}
+}

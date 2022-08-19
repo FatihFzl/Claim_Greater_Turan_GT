@@ -1,0 +1,64 @@
+raise_cizya_effects = {
+
+
+	every_sub_realm_county = {
+		limit = {
+
+			NOT = {
+				religion = religion:islam_religion
+			}
+
+		}
+		
+
+		add_county_modifier = {
+		modifier =	raise_cizya_modifier2
+		years = 10
+		} 
+			custom = raise_cizya_list
+		 
+	} 
+		every_vassal = {
+			limit = {
+				NOT = {
+					religion = religion:islam_religion
+				}
+			}
+
+			add_character_modifier = {
+				modifier = raise_cizya_modifier1
+				years  = 10
+			}
+		
+
+			custom = raise_cizya_list
+		
+		}
+		
+	
+}
+
+
+
+
+
+
+
+pillage_buddist_effects = {
+
+  every_vassal_or_below = {
+	limit = {
+		religion = buddhism_religion
+	}
+
+	add_character_modifier = {
+		modifier = humiliation_opinion1 
+
+			
+		years = 30
+		
+	}
+
+	custom = buddist_list
+  }
+}

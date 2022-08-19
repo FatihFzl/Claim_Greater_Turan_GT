@@ -1,0 +1,20 @@
+
+
+enforce_rice_farm_effects = {
+
+	every_sub_realm_county = {
+		#limit = {
+		#	OR = {
+		#		terrain = farmlands
+		#		terrain = plains
+		#	}
+			
+	#	}
+
+		add_county_modifier = enforce_rice_farms_modifier
+			
+		
+
+		custom = rice_farm_list
+	}
+}

@@ -1,0 +1,107 @@
+form_mamluk_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_mamluk.dds"
+	major = yes
+	desc = form_mamluk_decision_desc
+
+	ai_check_interval = 50
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		culture = {has_cultural_pillar = heritage_turkic}
+		
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:form_mamluk_decision
+				
+			}
+        }
+	}
+
+
+	is_valid = {
+  
+		prestige_level >= 3
+        completely_controls =title:k_egypt
+		completely_controls = title:k_syria
+		completely_controls = title:k_jerusalem
+		#completely_controls = title:k_blemmyia
+
+		religion = religion:islam_religion
+
+		is_at_war = no
+	}
+
+	cost = {
+		gold = {
+			value = 500
+		}
+	}
+
+	effect = {
+
+		#Can only happen once
+   add_to_global_variable_list = {
+	   name = unavailable_unique_decisions
+	   target = flag:form_mamluk_decision
+	   }
+
+	   create_title_and_vassal_change = {
+        type = created
+        save_scope_as = title_change
+        add_claim_on_loss = no
+     }
+    title:e_mamluk = {
+        change_title_holder = {
+            holder = root
+            change = scope:title_change
+        }
+
+
+	   title:k_egypt = {add_to_list = mamluk}
+	   title:k_syria = {add_to_list = mamluk}
+       title:k_blemmyia = {add_to_list = mamluk}
+	   title:k_jerusalem = {add_to_list = mamluk}
+	   title:k_arabia = {add_to_list = mamluk}
+	}
+
+	every_in_list = {
+        list = mamluk
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_mamluk
+        }
+    }
+
+	resolve_title_and_vassal_change = scope:title_change
+    #get_title = title:e_mamluk
+
+   spawn_mamluk_sultans_troops_effects = yes
+
+	add_trait = mamaluk
+
+	add_prestige = 3000
+	add_piety = 2000
+
+	dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = rags_to_riches
+                                  years = 80 }
+                }
+
+	 
+
+	give_nickname = nick_mamluk_sultan
+
+	save_scope_as = mamluk_sultan
+
+	trigger_event = mamluk_events.0001
+
+}
+
+
+
+}

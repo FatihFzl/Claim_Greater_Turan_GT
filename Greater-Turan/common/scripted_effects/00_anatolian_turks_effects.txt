@@ -1,0 +1,45 @@
+anatolian_turks_effects = {
+	
+	if = {
+		limit = { NOT = { has_culture = culture:anatolian_turks } }
+
+		
+
+		every_courtier= {
+			limit = {
+				OR = {
+					
+                       culture = {has_cultural_pillar = heritage_turkic }
+					
+					
+					
+
+						religion = religion:islam_religion
+					
+						
+				}
+			}
+			add_to_list = convert_list
+		}
+		 
+		culture:anatolian_turks = {
+			hidden_effect = { reset_culture_creation_date = yes }
+			get_all_innovations_from = scope:anatolian_turk.culture
+		}
+		set_culture = culture:anatolian_turks
+
+		every_in_list = {
+			list = convert_list
+			custom = anatolian_turks_convert_list
+			set_culture = culture:anatolian_turks
+		}
+	}
+
+	
+	every_sub_realm_county = {
+		
+		custom = anatolian_turks_convert_county_list
+		set_county_culture = culture:anatolian_turks
+	}
+
+}

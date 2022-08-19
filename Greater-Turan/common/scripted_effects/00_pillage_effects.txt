@@ -1,0 +1,25 @@
+
+pillage_cities_effects = {
+
+	every_sub_realm_county = {
+		limit = {
+
+			culture = {has_cultural_pillar = heritage_chinese}
+
+		}
+		
+
+		add_county_modifier = {
+		modifier =	pillage_city_modifier
+		years = 20
+		} 
+			
+		  
+		
+
+			
+		
+
+		custom = pilage_city_list
+	}
+}

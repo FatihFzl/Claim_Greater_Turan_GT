@@ -1,0 +1,114 @@
+form_uyghur_khaganate_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_uyghur.dds"
+	major = yes
+	desc = form_uyghur_khaganate_decision_desc
+
+	is_shown = {
+		highest_held_title_tier >=tier_duchy
+		
+		culture = culture:uyghur
+
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:form_uyghur_khaganate_decision
+				
+			}
+        }
+	}
+
+
+	is_valid = {
+		prestige_level >= 3
+		
+		highest_held_title_tier >= tier_kingdom
+		completely_controls = title:k_zhetysu
+		completely_controls = title:k_khotan
+		completely_controls = title:k_dzungaria
+		completely_controls = title:k_mongolia
+		completely_controls = title:k_tuva
+		completely_controls = title:k_kipchak
+		
+	}
+
+	cost = {
+		gold = {
+			value = 500
+		}
+		prestige = {
+			value = 1000
+		}
+	}
+
+	effect = {
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:form_uyghur_khaganate_decision
+			}
+
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			 }
+			title:e_uyghur = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+
+	}
+
+	title:k_mongolia = {add_to_list = uyghur}
+	title:k_zhetysu  = {add_to_list = uyghur}
+	title:k_dzungaria = {add_to_list = uyghur}
+	title:k_ob = {add_to_list = uyghur}
+	title:k_khotan = {add_to_list = uyghur}
+	title:k_tuva = {add_to_list = uyghur}
+	title:k_khakassia = {add_to_list = uyghur}
+
+	every_in_list = {
+        list = uyghur
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_uyghur
+        }
+    }
+ 
+	spawn_uyghur_khans_troops_effects = yes
+	
+
+	add_prestige = 3000
+	add_piety = 2000
+
+	dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = great_khan
+                                  years = 80 }
+                }
+
+				if = {
+					NOT={has_trait = trait:greatest_of_khans}
+					add_trait= greatest_of_khans
+							}
+
+
+      
+
+				 save_scope_as = uyghur_khan
+
+				 trigger_event = uyghur_khan_events.0001
+
+				
+
+		
+
+}
+
+
+				 
+}

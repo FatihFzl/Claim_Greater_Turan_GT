@@ -1,0 +1,45 @@
+cuman_kipchak_effects = {
+
+
+	if = {
+		limit = { NOT = { has_culture = culture:cuman_kipchak } }
+
+		every_courtier = {
+			limit = { 
+				OR = {
+					culture = culture:cuman
+					culture = culture:kipchak
+				}
+			 }
+			
+			
+			add_to_list = convert_list
+		}
+		
+		culture:cuman_kipchak = {
+			hidden_effect = { reset_culture_creation_date = yes }
+			get_all_innovations_from = scope:cuman_kipchak.culture
+		}
+		set_culture = culture:cuman_kipchak
+
+		every_in_list = {
+			list = convert_list
+			custom = cuman_kipchak_convert_list
+			set_culture = culture:cuman_kipchak
+		}
+	}
+
+	every_sub_realm_county = {
+		limit = {
+			tier = tier_county
+			
+			OR = {
+				culture = culture:kipchak
+				culture = culture:cuman
+			}
+		}
+		custom = cuman_kipchak_convert_counties
+		set_county_culture = culture:cuman_kipchak
+	}
+
+}

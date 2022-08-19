@@ -1,0 +1,64 @@
+cuman_kipchak_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_kuman_kıpcak.dds"
+	major = yes
+	desc = cuman_kipchak_decision_desc
+
+	ai_check_interval = 50
+
+
+   is_shown = {
+	has_title = title:e_cuman
+
+	NOT = {
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:cuman_kipchak_decision
+			
+		}
+	}
+   }
+
+
+   is_valid = {
+	prestige_level >= 3
+	
+	
+	
+}
+
+
+cost = {
+	prestige = 1000
+}
+
+
+effect = {
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:cuman_kipchak_decision
+		}
+
+
+   
+    every_vassal_or_below = {
+		limit = {
+			OR = {
+				culture = culture:cuman
+				culture = culture:kipchak
+			}
+		}
+
+		set_culture = culture:cuman_kipchak
+	}
+
+  save_scope_as = cuman_kipchak
+
+  show_as_tooltip = {cuman_kipchak_effects = yes}
+
+  trigger_event = cuman_kipchak_events.0001
+
+	}
+
+
+ 
+}

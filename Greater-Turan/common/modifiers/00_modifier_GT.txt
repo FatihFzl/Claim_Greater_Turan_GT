@@ -1,0 +1,44 @@
+khan_of_turks = {
+	icon = prestige_positive
+	same_culture_heritage_opinion = 15
+	prowess = 2
+	martial = 1
+	tax_mult = 0.1
+	levy_size = 0.1
+	hostile_scheme_resistance_add = 15
+	monthly_prestige_gain_mult = 0.5
+}
+
+descendants_of_mete_khan = {
+	icon = prestige_positive
+	same_culture_heritage_opinion = 20
+	prowess = 3
+	martial = 2
+	tax_mult = 0.15
+	levy_size = 0.15
+	hostile_scheme_resistance_add = 15
+	monthly_prestige = 8
+}
+
+great_khan = {
+	icon= prestige_positive
+	same_culture_heritage_opinion = 10
+	prowess = 1
+	stewardship = 1
+	diplomacy = 1
+	learning = 1
+	hostile_scheme_resistance_add = 15
+	monthly_prestige = 2
+	monthly_prestige_gain_mult = 0.3
+}
+
+rags_to_riches = {
+	icon = prestige_positive
+	same_culture_heritage_opinion = 5
+	prowess = 1
+	diplomacy = 1
+	hostile_scheme_resistance_add = 20
+	monthly_prestige = 2
+	monthly_prestige_gain_mult = 0.3
+
+}

@@ -1,0 +1,226 @@
+form_al_sin_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = form_al_sin_decision_desc
+
+	ai_check_interval = 100
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		religion = religion:islam_religion
+
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:form_al_sin_decision
+				
+			}
+        }
+	}
+
+	is_valid = {
+
+
+		highest_held_title_tier >= tier_kingdom
+
+		prestige_level >= 3
+		sub_realm_size >= 80
+		
+		
+		
+			 
+           
+
+				
+				
+				
+				
+		OR = {
+			has_title = title:k_xia
+			completely_controls = title:k_xia
+		}
+	
+		OR = {
+			has_title = title:k_kham
+			completely_controls = title:k_kham
+		}
+		OR = {
+			has_title = title:k_gyalrong
+			completely_controls = title:k_gyalrong
+		}
+		OR = {
+			has_title = title:k_u
+			completely_controls = title:k_u
+		}
+		
+		
+		
+		
+		   
+		
+	}	
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	cost = {
+		
+		gold = {
+			value = 500
+		}
+	}
+
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:form_al_sin_decision
+            }
+
+
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			 }
+			title:e_al_sin = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+		
+		
+			   
+			}
+
+         
+
+		  title:e_tibet = {add_to_list = china2}
+			
+		
+			every_in_list = {
+				list = china2
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_kingdom
+					}
+					set_de_jure_liege_title = title:e_al_sin
+				}
+			}
+
+			destroy_title = title:e_china_khaganete 
+			destroy_title = title:e_chinese_empire
+			
+		
+			 
+			resolve_title_and_vassal_change = scope:title_change
+			
+			dynasty = {
+
+				add_dynasty_prestige = 500
+			}
+
+
+			spawn_al_sin_troops_effects = yes
+
+			save_scope_as = invader
+
+			trigger_event = invade_china_events.0005
+
+}
+}
+
+
+raise_cizya_decision = {
+
+	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
+
+	desc = raise_cizya_decision_desc 
+
+   cooldown = {years = 8}
+	
+	is_shown = {
+		has_title = title:e_al_sin
+	}
+
+	is_valid = {
+		
+		has_any_vassal = {
+			limit = {
+				NOT = {
+				reigion = religion:islam_religion
+			}
+		}
+		}
+	}
+
+
+	effect = {
+		
+		
+
+			
+		
+		
+		save_scope_as = invader
+		
+		show_as_tooltip = {raise_cizya_effects = yes}
+           
+
+		trigger_event = invade_china_events.0009
+
+		
+
+	}
+
+}
+
+pillage_buddist_decision = {
+
+	picture = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
+
+	major = yes
+	desc = pillage_buddist_decision_desc
+
+	ai_check_interval = 100
+
+	is_shown = {
+		has_title = title:e_al_sin
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:pillage_buddist_decision
+				
+			}
+        }
+	}
+
+	is_valid = {
+
+		prestige_level >= 1
+		
+	}
+
+	effect = {
+
+
+		
+				
+			
+			
+		
+
+		add_gold = 1500
+
+		save_scope_as = invader
+
+      show_as_tooltip = {pillage_buddist_effects = yes}
+
+		trigger_event = invade_china_events.0006
+
+	}
+}

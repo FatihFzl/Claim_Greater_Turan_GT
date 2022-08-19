@@ -1,0 +1,630 @@
+claim_western_turan_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = claim_western_turan_decision_desc
+
+    ai_check_interval = 0
+
+    is_shown = {
+        highest_held_title_tier >= tier_duchy
+        is_landed = yes
+        culture = {has_cultural_pillar = heritage_turkic }
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:claim_western_turan_decision
+				
+			}
+        }
+
+    }
+
+    is_valid = {
+		martial >=20
+		prestige_level >=4
+		highest_held_title_tier = tier_empire
+		sub_realm_size >=80
+        #has_title = k_persia
+        completely_controls =title:k_persia
+        completely_controls = title:k_khorasan
+		
+	}
+
+    is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+    cost = {
+		gold = {
+			value = 400
+		}
+		prestige = {
+			value = 2000
+		}
+	}
+
+   effect = {
+
+             #Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:claim_western_turan_decision
+            }
+ 
+           create_title_and_vassal_change = {
+        type = created
+        save_scope_as = title_change
+        add_claim_on_loss = no
+     }
+    title:e_western_turan = {
+        change_title_holder = {
+            holder = root
+            change = scope:title_change
+        }
+       
+		#create_custom_empire_effect = yes
+    }
+
+      
+      title:e_persia = {add_to_list = western_turan}
+
+      any_held_title = {
+        limit = {
+           tier >= tier_kingdom
+        }
+        add_to_list = western_turan
+
+    }
+
+     completely_controls = {
+        limit = {
+            tier >= tier_kingdom
+
+        }
+        add_to_list = western_turan
+     }
+
+         every_in_list = {
+        list = western_turan
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_western_turan
+        }
+    }
+
+    resolve_title_and_vassal_change = scope:title_change
+    get_title = title:e_western_turan
+    #set_primary_title_to = title:e_western_turan
+
+    
+
+    hidden_effect = {
+        if = {
+            limit = {has_title=title:e_persia}
+            destroy_title= title:e_persia
+        }
+    }
+  
+     if = {
+        NOT={has_trait = trait:greatest_of_khans}
+        add_trait= greatest_of_khans
+     }
+
+    # if = {
+    #    NOT={has_trait = trait:intellect_good_3}
+    #    add_trait= intellect_good_3
+    # }
+
+  # add_title_laws = {turkic_election_succession_law}
+   
+    add_prestige = 5000
+    add_piety = 1000
+
+    dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = khan_of_turks 
+                                  years = 80 }
+                }
+     
+     spawn_western_khan_troops_effects = yes
+
+     if = {
+        limit = { has_any_nickname = yes }
+        remove_nickname = yes
+    }
+    give_nickname = nick_western_khan
+
+    save_scope_as = western_khan
+
+     #save_scope_as = western_turan_former
+     
+     trigger_event = western_turan_events.0001
+}
+}
+
+#Eastern_Khan
+
+claim_eastern_turan_decision = {
+     picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = claim_eastern_turan_decision_desc
+
+    ai_check_interval = 0
+
+
+     is_shown = {
+        highest_held_title_tier >= tier_duchy
+        is_landed = yes
+        culture = {has_cultural_pillar = heritage_turkic }
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:claim_eastern_turan_decision
+				
+			}
+        }
+
+    }
+
+     is_valid = {
+		martial >=20
+		prestige_level >= 4
+		highest_held_title_tier = tier_empire
+		sub_realm_size >= 80
+        #has_title = k_persia
+         completely_controls = title:k_transoxiana
+         completely_controls = title:k_syr_darya
+         completely_controls = title:k_cumania
+		
+	}
+ 
+    is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+    cost = {
+		gold = {
+			value = 400
+		}
+		prestige = {
+			value = 2000
+		}
+	}
+            
+   effect = {
+
+       #      #Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:claim_eastern_turan_decision
+          }
+ 
+           create_title_and_vassal_change = {
+        type = created
+        save_scope_as = title_change
+        add_claim_on_loss = no
+     }
+    title:e_eastern_turan = {
+        change_title_holder = {
+            holder = root
+            change = scope:title_change
+        }
+        
+
+
+		#create_custom_empire_effect = yes
+    }
+    
+    
+
+    title:e_turan = {add_to_list = eastern_turan}
+    title:e_tartaria = {add_to_list = eastern_turan} 
+    
+    any_held_title = {
+        limit = {
+           tier >= tier_kingdom
+        }
+        add_to_list = eastern_turan
+    }
+
+    completely_controls = {
+        limit = {
+            tier >= tier_kingdom
+
+        }
+        add_to_list = eastern_turan
+     }
+
+
+        every_in_list = {
+        list = eastern_turan
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_eastern_turan
+        }
+    }
+ 
+    
+
+    resolve_title_and_vassal_change = scope:title_change
+    get_title = title:e_eastern_turan
+    #set_primary_title_to = title:e_eastern_turan
+
+    hidden_effect = {
+        if = {
+            limit = {has_title=title:e_turan}
+            destroy_title= title:e_turan
+        }
+        if = {
+            limit = {has_title=title:e_tartaria}
+            destroy_title=title:e_tartaria
+        }
+    }
+  
+     if = {
+        NOT={has_trait = trait:greatest_of_khans}
+        add_trait= greatest_of_khans
+     }
+
+    # if = {
+    #    NOT={has_trait = trait:intellect_good_3}
+    #    add_trait= intellect_good_3
+    # }
+ 
+
+    
+    add_prestige = 5000
+    add_piety = 1000
+     
+     dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = khan_of_turks 
+                                  years = 80}
+    }
+     spawn_eastern_khan_troops_effects = yes
+
+     if = {
+        limit = { has_any_nickname = yes }
+        remove_nickname = yes
+    }
+    give_nickname = nick_eastern_khan
+     
+    save_scope_as = eastern_khan
+
+
+     #save_scope_as = eastern_turan_former
+     trigger_event = eastern_turan_events.0001
+}
+
+
+
+
+}
+
+
+#####Great_Khan
+
+claim_greater_turan_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = claim_greater_turan_decision_desc
+
+    ai_check_interval = 0
+
+
+     is_shown = {
+        highest_held_title_tier = tier_empire
+        is_landed = yes
+        culture = {has_cultural_pillar = heritage_turkic }
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:claim_greater_turan_decision
+				
+			}
+        }
+
+    }
+
+    is_valid = {
+		
+        prestige_level >= 4
+		has_title = title:e_eastern_turan
+        has_title = title:e_western_turan      
+		
+	}
+
+    is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+    cost = {
+		gold = {
+			value = 1000
+		}
+		prestige = {
+			value = 3000
+		}
+	}
+
+    effect = {
+         #Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:claim_greater_turan_decision
+           }
+ 
+           create_title_and_vassal_change = {
+        type = created
+        save_scope_as = title_change
+        add_claim_on_loss = no
+     }
+
+     title:e_greater_turan = {
+        change_title_holder = {
+            holder = root
+            change = scope:title_change
+        }
+       
+
+
+		#create_custom_empire_effect = yes
+    }
+
+    title:e_kangar = {add_to_list = greater_turan}
+    title:e_eastern_turan = {add_to_list = greater_turan}
+    title:e_western_turan = {add_to_list = greater_turan}
+    title:e_uyghur = {add_to_list = greater_turan}   
+    any_held_title = {
+        limit = {
+           tier >= tier_kingdom
+        }
+        add_to_list = greater_turan
+    }
+
+    completely_controls = {
+        limit = {
+            tier >= tier_kingdom
+
+        }
+        add_to_list = greater_turan
+     }
+
+ every_in_list = {
+        list = greater_turan
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_greater_turan
+        }
+    }
+ 
+     
+    resolve_title_and_vassal_change = scope:title_change
+    set_primary_title_to = title:e_greater_turan
+
+    hidden_effect = {
+        if = {
+            limit = {has_title=title:e_eastern_turan}
+            destroy_title= title:e_eastern_turan
+        }
+        if = {
+            limit = {has_title=title:e_western_turan}
+            destroy_title=title:e_western_turan
+        }
+    }
+
+    if = {
+        NOT={has_trait = trait:greatest_of_khans}
+        add_trait= greatest_of_khans
+     }
+
+    # if = {
+    #    NOT={has_trait = trait:intellect_good_3}
+    #    add_trait= intellect_good_3
+    # }
+ 
+    add_trait = true_heir_of_mete
+    
+    add_prestige = 5000
+    add_piety = 1000
+     
+     dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 5000
+        add_dynasty_modifier = {modifier = descendants_of_mete_khan 
+                                  years =  80}
+    }
+    
+    spawn_great_khan_troops_effects = yes
+
+    if = {
+        limit = { has_any_nickname = yes }
+        remove_nickname = yes
+    }
+    give_nickname = nick_father_of_turks
+    
+    save_scope_as = father_of_turks
+
+
+    #save_scope_as = greater_turan_former
+    trigger_event = greater_turan_events.0001
+
+    }
+
+
+}
+
+### MUGHAL EMPIRE
+
+form_mughal_empire_decision = {
+    
+    picture = "gfx/interface/illustrations/decisions/decision_turkic_people.dds"
+
+    major = yes
+    desc = form_mughal_empire_decision_desc
+
+    ai_check_interval = 0
+
+
+     is_shown = {
+        highest_held_title_tier >= tier_duchy
+        is_landed = yes
+        culture = {has_cultural_pillar = heritage_turkic }
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:form_mughal_empire_decision
+				
+			}
+        }
+
+    }
+
+    is_valid = {
+		
+        prestige_level >= 4
+		culture = {has_cultural_pillar = heritage_turkic}
+        religion = religion:islam_religion
+        OR = {
+            #count >=2 
+            AND = {
+                 completely_controls = title:e_bengal
+            }
+            AND = {
+                completely_controls = title:e_deccan
+            }
+            AND = {
+                completely_controls = title:e_rajastan
+
+            }
+        }
+        
+        
+        
+        
+        #any_held_title = {
+        #    count >=3
+        #    tier = tier_kingdom
+        #}
+		
+	}
+
+    is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+    cost = {
+		gold = {
+			value = 1000
+		}
+		prestige = {
+			value = 2000
+		}
+	}
+
+    effect = {
+        add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:form_mughal_empire_decision
+           }
+
+           create_title_and_vassal_change = {
+            type = created
+            save_scope_as = title_change
+            add_claim_on_loss = no
+         }
+    
+         title:e_mughal_empire = {
+            change_title_holder = {
+                holder = root
+                change = scope:title_change
+            }
+           
+    
+    
+            #create_custom_empire_effect = yes
+        }
+     
+        
+
+        title:e_rajastan = {add_to_list = mughal_empire}
+       title:e_deccan = {add_to_list = mughal_empire}
+        title:e_bengal = {add_to_list = mughal_empire}
+        #every_held_title = {
+         #   tier >= tier_kingdom
+         #   add_to_list = mughal_empire
+        #}
+
+        every_in_list = {
+            list = mughal_empire
+            every_in_de_jure_hierarchy = {
+                limit = {
+                    tier = tier_kingdom
+                }
+                set_de_jure_liege_title = title:e_mughal_empire
+            }
+        }
+    
+
+
+    get_title = title:e_mughal_empire
+
+    hidden_effect = {
+       destroy_title = title:e_bengal
+       destroy_title = title:e_deccan
+       destroy_title = title:e_rajastan
+    }
+
+
+    if = {
+        NOT={has_trait = trait:greatest_of_khans}
+        add_trait= greatest_of_khans
+     }
+
+
+     add_prestige = 3000
+     add_piety = 1000
+
+     dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = great_khan 
+                                  years =  80}
+    }
+
+    if = {
+        limit = {
+            NOT= {has_nickname = nick_father_of_turks}
+             has_any_nickname = yes
+           
+         }
+        remove_nickname = yes
+    }
+    give_nickname = nick_babur_shah
+
+     
+
+    spawn_mughal_khans_troops_effects = yes
+    
+    save_scope_as = babur_shah
+    #save_scope_as = mughal_empire_former
+    
+    trigger_event = mughal_empire_events.0001
+}
+}

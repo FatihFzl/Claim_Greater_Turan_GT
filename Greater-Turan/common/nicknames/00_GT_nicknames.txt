@@ -1,0 +1,6 @@
+nick_father_of_turks = {}
+nick_eastern_khan = {}
+nick_western_khan = {}
+nick_babur_shah = {}
+nick_avenger = {}
+nick_mamluk_sultan = {}

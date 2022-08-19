@@ -1,0 +1,20 @@
+mamaluk = {
+	fame = yes
+	diplomacy = 2
+	martial = 4
+	prowess = 4
+
+	vassal_opinion = 10
+	dread_baseline_add = 50
+	dread_decay_mult = -0.5
+	hostile_scheme_resistance_mult = 0.25
+	enemy_hostile_scheme_success_chance_add = -25
+	vassal_limit = 10
+	domain_limit = 2
+
+	movement_speed = 0.35                                                                                 
+    
+                 shown_in_ruler_designer = yes
+
+				 desc = trait_mamaluk_desc
+}

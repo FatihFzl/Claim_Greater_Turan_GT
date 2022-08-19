@@ -1,0 +1,328 @@
+invade_china2_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_horse_archers.dds"
+	major = yes
+	desc = invade_china2_decision_desc
+  
+    ai_check_interval = 100
+
+	is_shown = {
+		highest_held_title_tier >= tier_kingdom
+		culture = {has_cultural_pillar = heritage_turkic }
+
+		OR  = {
+			 
+              
+
+				AND = {
+					has_title = title:k_mongolia
+
+				}
+				AND = {
+					has_title = title:k_khotan
+				}
+
+				AND = {
+					has_title = title:k_dzungaria
+				}
+				
+				AND = {
+					has_title = title:k_zhetysu
+				}
+			
+				AND = {
+					has_title = title:k_kham
+				}
+				AND = {
+					has_title = title:k_gyalrong
+				}
+				AND = {
+					has_title = title:k_u
+				}
+		}
+
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:invade_china2_decision
+				
+			}
+        }
+	}
+
+
+	is_valid = {
+		highest_held_title_tier >= tier_kingdom
+		
+      
+		prestige_level >= 3
+			sub_realm_size >= 80
+
+			
+			
+		# AND  = {
+					
+				OR = {
+					has_title = title:k_xia
+					completely_controls = title:k_xia
+				}
+			
+				OR = {
+					has_title = title:k_kham
+					completely_controls = title:k_kham
+				}
+				OR = {
+					has_title = title:k_gyalrong
+					completely_controls = title:k_gyalrong
+				}
+				OR = {
+					has_title = title:k_u
+					completely_controls = title:k_u
+				}
+		#}
+
+
+}
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	cost = {
+		
+		gold = {
+			value = 500
+		}
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:invade_china2_decision
+            }
+
+
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			 }
+			title:e_china_khaganate = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+		
+		
+			   
+			}
+
+          if = {
+
+			OR = {
+				completely_controls = k_mongolia
+				has_title = title:k_mongolia
+			
+			}
+             title:k_mongolia = {add_to_list = china}  
+
+			OR = {
+				completely_controls = k_khotan
+				has_title = title:k_khotan
+			}
+
+			title:k_khotan = {add_to_list = china}  
+
+		  }
+
+		  title:e_tibet = {add_to_list = china}
+			
+		
+			every_in_list = {
+				list = china
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_kingdom
+					}
+					set_de_jure_liege_title = title:e_china_khaganate
+				}
+			}
+
+			destroy_title = title:e_al_sin
+			destroy_title = title:e_chinese_empire
+		
+			 
+			resolve_title_and_vassal_change = scope:title_change
+			
+			dynasty = {
+
+				add_dynasty_modifier = {
+					modifier = great_khan
+					year = 80
+				}
+			}
+
+			
+
+         save_scope_as = invader
+
+		 trigger_event = invade_china_events.0002
+		
+	}
+
+
+}
+
+raise_warbands_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_horse_archers.dds"
+	
+	desc = raise_warbands_decision_desc
+
+
+	ai_check_interval = 100
+
+   cooldown = {years = 3}
+
+	is_shown = {
+		has_title = title:e_china_khaganate
+	}
+
+	is_valid = {
+		prestige_level >= 2
+	}
+
+	cost = {
+		gold = 200
+		prestige = 400
+	}
+
+
+	effect = {
+      
+		spawn_invader_horde_effects = yes
+
+	 
+	  
+	}
+}
+
+
+pillage_city_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_horse_archers.dds"
+	
+	desc = pillage_city_decision_desc
+
+	cooldown = {years = 8}
+
+	is_shown = {
+		has_title = title:e_china_khaganate
+	}
+
+	is_valid = {
+		prestige_level >= 1
+		 
+	}
+
+	cost = {
+		prestige = {
+			value = 300
+		}
+	}
+
+	effect = {
+
+
+		
+       
+
+		add_gold = 300
+
+		save_scope_as = invader
+
+      show_as_tooltip = {pillage_cities_effects = yes}
+
+		trigger_event = invade_china_events.0003
+	}
+}
+
+
+
+
+humiliate_han_decision = {
+
+	picture = "gfx/interface/illustrations/decisions/baideng.dds"
+
+	desc = humiliate_han_decision_desc
+	major = yes
+
+    
+
+	is_shown = {
+   	has_title = title:e_china_khaganate
+	
+	   NOT = {
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:humiliate_han_decision
+			
+		}
+	}
+
+
+}
+
+	is_valid = {
+		prestige_level >= 1
+		
+	}
+
+
+	effect = {
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:humiliate_han_decision
+
+
+		}
+
+
+     if = {
+		has_any_vassal = {
+			limit = {culture = culture:han}
+		}
+
+every_vassal_or_below = {
+			
+			limit = {culture = culture:han}
+
+			
+				add_opinion = {
+					target = title:e_china_khaganate.holder
+					opinion = -100
+				     	# modifier = humiliation_opinion
+					years = 50
+					
+				}	
+				
+			
+			
+		}
+
+	 }
+
+		
+	 save_scope_as = invader 
+	 trigger_event = invade_china_events.0004
+		
+		
+				
+		
+		
+
+
+		add_prestige = 8000
+}
+
+}

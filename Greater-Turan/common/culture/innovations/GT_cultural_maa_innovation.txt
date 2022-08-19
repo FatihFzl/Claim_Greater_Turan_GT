@@ -1,0 +1,71 @@
+@inno_heavy_sipahi = "gfx/interface/icons/culture_innovations/innovation_gt_heavy_sipahi.dds"
+@inno_light_sipahi = "gfx/interface/icons/culture_innovations/innovation_gt_sipahi.dds"
+@inno_janissary = "gfx/interface/icons/culture_innovations/innovation_devshirme.dds"
+@inno_yaya = "gfx/interface/icons/culture_innovations/innovation_yaya.dds"
+
+
+innovation_heavy_sipahi = {
+	group = culture_group_regional
+	culture_era = culture_era_high_medieval
+	icon = @inno_heavy_sipahi
+    #region = turkic_succession_region
+
+	potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = heavy_sipahi
+
+	flag = global_regional
+	flag = high_medieval_era_regional
+}
+
+innovation_light_sipahi = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @inno_light_sipahi
+    #region = turkic_succession_region
+
+	potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = light_sipahi
+
+	flag = global_regional
+	flag = early_medieval_era_regional
+}
+
+innovation_devshirme = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+    icon = @inno_janissary
+    region = ghw_region_anatolia
+
+    potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = janissary
+
+	flag = global_regional
+	flag = late_medieval_era_regional
+
+}
+
+innovation_yaya = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+    icon = @inno_janissary
+    
+
+    potential = {
+		has_cultural_pillar = heritage_turkic
+	}
+
+	unlock_maa = musellem
+
+	flag = global_regional
+	flag = early_medieval_era_regional
+}
+

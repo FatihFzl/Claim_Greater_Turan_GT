@@ -1,0 +1,56 @@
+spawn_mamluk_sultans_troops_effects = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = mamluk_sultans_troops
+         
+		levies = {
+				value = 2000
+			}
+
+		men_at_arms = {
+			type = horse_archers
+			stacks=12
+			
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks=12
+			
+		}
+
+		men_at_arms = {
+			type = light_horsemen 
+			stacks=12
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 4
+		}
+		location = capital_province
+	}
+
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = mamluk_sultans_troops
+         
+		levies = {
+				value = 2000
+			}
+
+	
+
+		men_at_arms = {
+			type = camel_rider 
+			stacks=12
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 12
+		}
+		location = capital_province
+	}
+	
+	
+}

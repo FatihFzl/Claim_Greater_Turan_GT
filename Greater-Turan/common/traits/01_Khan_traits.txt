@@ -1,0 +1,25 @@
+true_heir_of_mete = {
+                    fame = yes
+
+                    diplomacy = 2
+                     martial = 7
+                     stewardship = 2
+                     prowess = 5
+               
+                  same_culture_opinion = 30
+                  vassal_opinion = 25
+                  dread_baseline_add = 50
+	dread_decay_mult = -0.5
+	hostile_scheme_resistance_mult = 0.25
+	enemy_hostile_scheme_success_chance_add = -25
+	vassal_limit = 75
+   domain_limit = 4
+	#army_maintenance_mult = -0.75
+	movement_speed = 0.35                                                                                 
+    
+                 shown_in_ruler_designer = yes
+
+                 desc= trait_true_heir_of_mete_desc
+
+
+}

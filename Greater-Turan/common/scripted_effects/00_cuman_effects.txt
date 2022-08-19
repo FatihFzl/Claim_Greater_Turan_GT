@@ -1,0 +1,63 @@
+spawn_cuman_khans_troops_effects = {
+	spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = cuman_khans_troops
+
+			levies = {
+				value = 2000
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 12
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 12
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 12
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 12
+			}
+			men_at_arms = {
+				type = armored_horsemen
+				stacks = 3
+			}
+			
+			location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = cuman_khans_troops
+		levies = {
+			value = 2000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 12
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 12
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 3
+		}
+		
+		location = capital_province
+}
+}

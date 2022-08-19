@@ -1,0 +1,261 @@
+form_china_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	desc = form_china_decision_desc
+
+
+
+
+	ai_check_interval = 100
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		culture = {has_cultural_pillar = heritage_chinese}
+
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:form_china_decision
+				
+			}
+        }
+	}
+
+
+
+   is_valid = {
+
+	highest_held_title_tier >= tier_kingdom
+
+	prestige_level >= 3
+	
+	
+		
+		OR = {
+        completely_controls = title:k_u
+		has_title = title:k_u
+		
+		}
+
+		OR = {
+			completely_controls = title:k_gyalrong
+			has_title = title:k_gyalrong
+		}
+
+		OR = {
+			completely_controls = title:k_xia
+			has_title = title:k_xia
+		}
+
+		OR = {
+			completely_controls = title:k_kham
+			has_title = title:k_kham
+		}
+	
+	
+
+   }
+
+
+   is_valid_showing_failures_only = {
+	is_adult = yes
+	is_available = yes
+	is_independent_ruler = yes
+	is_at_war = no
+}
+
+cost = {
+
+	gold = {
+		value = 500
+	}
+}
+
+
+
+effect = {
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:form_china_decision
+		}
+
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		 }
+		title:e_chinese_empire = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+	
+	
+		   
+		}
+
+	 
+
+	  title:e_tibet = {add_to_list = china3}
+		
+	
+		every_in_list = {
+			list = china3
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_kingdom
+				}
+				set_de_jure_liege_title = title:e_chinese_empire
+			}
+		}
+
+		if = {
+			has_title = title:e_china_khaganate
+			destroy_title = title:e_china_khaganate 
+		}
+		
+		if = {
+			has_title = title:e_al_sin
+			destroy_title = title:e_al_sin
+		
+		}
+		
+	
+		 
+		resolve_title_and_vassal_change = scope:title_change
+		
+		dynasty = {
+
+			add_dynasty_prestige = 500
+		}
+
+
+		spawn_china_troops_effects = yes
+
+		save_scope_as = invader
+
+		trigger_event = invade_china_events.0007
+
+}
+
+
+
+}
+
+
+
+imperial_army = {
+
+	picture = "gfx/interface/illustrations/decisions/decision_invite_knights.dds"
+	major = yes
+	desc = imperial_army_desc 
+
+	ai_check_interval = 100
+
+	is_shown = {
+		has_title = title:e_chinese_empire
+
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:imperial_army
+				
+			}
+        }
+	}
+
+	is_valid = {
+		prestige_level >= 3
+	}
+	
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+		
+
+}
+
+cost = {
+	gold = 400
+	prestige = 500
+	
+}
+
+   effect = {
+ 
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:imperial_army
+		}
+
+	spawn_imperial_army_effects = yes
+   }
+
+}
+
+enforce_rice_farming = {
+
+	picture = "gfx/interface/illustrations/decisions/decision_rice_farm.dds"
+
+	major = yes
+	desc= enforce_rice_farming_desc
+
+	
+		is_shown = {
+
+			has_title = title:e_chinese_empire
+	
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:enforce_rice_farming
+					
+				}
+			}
+		}
+	
+		is_valid = {
+			prestige_level >= 3
+		}
+	
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+		is_at_war = no
+
+}
+cost = {
+	gold = 500
+	
+}
+
+   effect = {
+
+    add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:enforce_rice_farming
+		}
+
+
+		
+	
+
+		
+		
+
+   
+
+   add_prestige = 1000
+
+   save_scope_as = invader 
+    show_as_tooltip = {enforce_rice_farm_effects = yes}
+   
+	trigger_event = invade_china_events.0008
+
+}
+
+}

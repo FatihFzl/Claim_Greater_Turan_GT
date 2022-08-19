@@ -1,0 +1,161 @@
+e_western_turan = {
+color = {0 255 255}
+     color2 = {0 255 255}
+     
+    definite_form = yes
+    can_be_named_after_dynasty = no   
+
+ 
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	capital = c_isfahan
+}
+
+e_eastern_turan = {
+
+color = {0 255 255}
+     color2 = {0 255 255}
+     
+    definite_form = yes
+    can_be_named_after_dynasty = no   
+
+ 
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	capital = c_bukhara
+
+}
+
+e_greater_turan = {
+     color = {0 255 255}
+     color2 = {0 255 255}
+     
+    definite_form = yes
+    can_be_named_after_dynasty = no   
+
+	de_jure_drift_disabled = yes
+ 
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	capital = c_bukhara
+}
+
+e_mughal_empire = {
+	color = {53 200 71}
+	color2 = {53 200 71}
+
+	definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	capital = c_mathura
+}
+
+e_mamluk = {
+	color = {201 213 51}
+	color2 = {201 213 51}
+
+	definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_cairo
+}
+
+e_uyghur = {
+	color = {47 40 170}
+	color2 = {47 40 170}
+
+	definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_karakorum
+}
+
+e_kangar = {
+	color = {201 213 51}
+	color2 = {201 213 51}
+
+	definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_turgay
+}
+
+e_cuman = {
+	color = {57 221 230}
+	color2 = {57 221 320}
+
+	definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_turgay
+}
+
+e_china_khaganate = {
+	color = {107 107 107 }
+	color2 = {107 107 107 }
+
+	definite_form = yes
+	can_be_named_after_dynasty = yes
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_altay
+}
+
+e_al_sin = {
+	color = {74 150 46 }
+	color2 = {74 150 46 }
+
+	definite_form = yes
+	can_be_named_after_dynasty = yes
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_nagormo
+
+
+}
+
+e_chinese_empire = {
+	color = {235 37 175 }
+	color2 = {235 37 175 }
+
+	definite_form = yes
+	can_be_named_after_dynasty = yes
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+	
+	capital = c_nagormo
+}

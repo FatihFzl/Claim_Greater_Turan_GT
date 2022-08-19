@@ -1,0 +1,141 @@
+cuman_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_kuman_kıpcak.dds"
+	major = yes
+	desc = cuman_decision_desc
+
+	ai_check_interval = 50
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		
+		OR = {
+			culture = culture:cuman
+		    culture = culture:kipchak
+		}
+		
+		#culture = culture:kipchak
+		
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:cuman_decision
+				
+			}
+        }
+	}
+
+
+    is_valid = {
+		prestige_level >= 3
+		
+		highest_held_title_tier >= tier_kingdom
+		OR = {
+        completely_controls = title:k_cuman
+		has_title = title:k_cuman
+		
+		}
+
+		OR = {
+			completely_controls = title:k_kipchak
+			has_title = title:k_kimek
+		}
+
+		OR = {
+			completely_controls = title:k_caspian_steppe
+			has_title = title:k_caspian_steppe
+		}
+
+		OR = {
+			completely_controls = title:k_pontic_steppe
+			has_title = title:k_pontic_steppe
+		}
+		
+
+   	
+		
+	}
+
+	cost = {
+		gold = {
+			value = 500
+		}
+		prestige = {
+			value = 1000
+		}
+	}
+
+
+
+	effect = {
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:cuman_decision
+			}
+
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			 }
+			title:e_cuman = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+
+	}
+
+	title:k_cuman = {add_to_list = cuman}
+	title:k_kimek  = {add_to_list =cuman}
+	title:k_kipchak = {add_to_list = cuman}
+	title:k_caspian_steppe = {add_to_list = cuman}
+	title:k_pontic_steppe = {add_to_list = cuman}
+	title:k_dacia = {add_to_list = cuman}
+	title:k_moldavia = {add_to_list = cuman}
+	
+
+	every_in_list = {
+        list = cuman
+        every_in_de_jure_hierarchy = {
+            limit = {
+                tier = tier_kingdom
+            }
+            set_de_jure_liege_title = title:e_cuman
+        }
+    }
+ 
+	spawn_cuman_khans_troops_effects = yes
+	 
+	get_title = title:e_cuman 
+
+	add_prestige = 3000
+	add_piety = 2000
+
+	dynasty = {
+        add_dynasty_prestige_level = 1
+        add_dynasty_prestige = 2500
+        add_dynasty_modifier = {modifier = great_khan
+                                  years = 80 }
+                }
+
+				if = {
+					NOT={has_trait = trait:greatest_of_khans}
+					add_trait= greatest_of_khans
+							}
+
+
+      
+
+				 save_scope_as = cuman_khan
+
+				 trigger_event = cuman_khan_events.0001
+
+				
+
+		
+
+}
+
+
+}

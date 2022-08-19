@@ -1,0 +1,66 @@
+avenge_talkan_and_curcan_massaccre_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_turkic_cavalry.dds"
+    major = yes
+	desc = avenge_talkan_and_curcan_massaccre_decision_desc 
+
+	ai_check_interval = 0
+
+	is_shown = {
+		highest_held_title_tier >= tier_duchy
+		is_landed = yes
+		culture = {has_cultural_pillar = heritage_turkic }
+		religion = religion:tengrism_religion
+        NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:avenge_talkan_and_curcan_massaccre_decision
+				
+			}
+        }
+	}
+
+	is_valid = {
+		highest_held_title_tier >= tier_kingdom
+		
+        #completely_controls_region = ghw_region_arabia
+         completely_controls_region = world_middle_east_arabia
+	}
+
+	cost = {
+
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:avenge_talkan_and_curcan_massaccre_decision
+            }
+
+			#set_global_variable = { name = char_culture value = root.culture }
+		
+		every_sub_realm_county  = { 
+			limit =  {NOT = {culture = {has_cultural_pillar = heritage_turkic} }}
+			set_county_culture = root.culture 
+		}
+	    every_vassal_or_below  =  { set_culture = root.culture }
+		
+		
+		#set_global_variable = {name = char_faith value = root.faith}
+		
+		every_sub_realm_county = {
+			limit = {NOT = {religion =  religion:tengrism_religion}}
+			set_county_faith = root.faith
+		}
+		every_vassal_or_below = {set_character_faith = root.faith}
+
+		
+        
+
+		save_scope_as = avenger
+
+        
+
+		trigger_event = avenger_events.0001
+	}
+
+}

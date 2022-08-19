@@ -1,0 +1,178 @@
+spawn_china_invader_troops_effects = {
+	spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = china_invader_troops
+
+			levies = {
+				value = 2000
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 12
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 12
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 12
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 12
+			}
+			
+			
+			location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = cuman_khans_troops
+		levies = {
+			value = 2000
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 8
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 8
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 8
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 8
+		}
+		
+		location = capital_province
+}
+}
+
+
+spawn_invader_horde_effects = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = invader_horde
+
+		
+		men_at_arms = {
+			type = horse_archers
+			stacks= 10
+		}
+		
+	
+		location = capital_province
+	}
+
+}
+
+
+spawn_al_sin_troops_effects = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = al_sin_army
+
+		levies = {
+			value = 2000
+		}
+		men_at_arms = {
+			type = skirmishers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+	
+		location = capital_province
+	}
+	
+}
+
+spawn_chinese_troops_effects = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = chinese_army
+
+		levies = {
+			value = 3000
+		}
+		men_at_arms = {
+			type = skirmishers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 10
+		}
+	
+		location = capital_province
+	}
+	
+}
+
+spawn_imperial_army_effects = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = imperial_army
+
+		men_at_arms = {
+
+			type = chu_ko_nu
+			stacks = 10
+		}
+		men_at_arms = {
+
+			type = chu_ko_nu
+			stacks = 10
+		}
+		men_at_arms = {
+
+			type = chu_ko_nu
+			stacks = 10
+		}
+		men_at_arms = {
+
+			type = chu_ko_nu
+			stacks = 10
+		}
+		men_at_arms = {
+
+			type = chu_ko_nu
+			stacks = 10
+		}
+	
+		location = capital_province
+	}
+}

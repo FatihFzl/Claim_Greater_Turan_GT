@@ -1,0 +1,8 @@
+enforce_rice_farms_modifier = {
+	
+		tax_mult = 0.4
+		
+	development_growth = 0.2
+	
+}
+

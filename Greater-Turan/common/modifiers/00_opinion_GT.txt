@@ -1,0 +1,33 @@
+humiliation_opinion = {
+
+	vassal_opinion = -50
+}
+
+pillage_city_modifier = {
+
+	
+
+		county_opinion_add = -50
+	
+	development_growth = -0.2
+	
+	
+
+}
+
+
+raise_cizya_modifier1 = {
+	vassal_opinion = -20
+	#vassal_tax_contribution = 0.2
+	vassal_tax_mult= 0.2
+}
+
+raise_cizya_modifier2 = {
+	tax_mult = 0.2
+	county_opinion_add = -15
+}
+
+humiliation1_opinion = {
+
+	vassal_opinion = -50
+}

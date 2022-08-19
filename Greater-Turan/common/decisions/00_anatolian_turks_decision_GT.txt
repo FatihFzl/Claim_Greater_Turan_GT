@@ -1,0 +1,79 @@
+GreaterTuran_anatolian_turks_decision = {
+
+
+	picture = "gfx/interface/illustrations/decisions/decision_oghuz_begs.dds"
+	major = yes
+	desc = GreaterTuran_anatolian_turks_decision_desc
+
+	is_shown = {
+		highest_held_title_tier >= tier_kingdom
+		culture = {has_cultural_pillar = heritage_turkic}
+		
+		NOT = {
+            is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+                target = flag:GreaterTuran_anatolian_turks_decision
+			}
+	}
+	}
+
+	is_valid = {
+
+    prestige_level >= 3
+		
+		OR = {
+			AND = {
+				has_title = title:k_rum
+			}
+			
+			AND = {
+				completely_controls = title:k_nikaea
+				completely_controls = title:k_anatolia
+				completely_controls = title:k_pontus
+			}
+
+		}
+		
+		
+		
+}
+	
+	cost = {
+		prestige = 1000
+	}
+
+	effect = {
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+            target = flag:GreaterTuran_anatolian_turks_decision
+            }
+
+		
+
+         every_vassal_or_below = {
+			limit = {
+				OR = {
+					culture = {has_cultural_pillar = heritage_turkic}
+					religion = religion:islam_religion
+				}
+			}
+	
+			set_culture = culture:anatolian_turks
+		 }
+		
+		
+
+			 save_scope_as = anatolian_turk
+		
+			 show_as_tooltip = {anatolian_turks_effects = yes}
+
+
+          trigger_event = anatolian_turks_events.0001
+        
+       
+
+}
+
+
+}
